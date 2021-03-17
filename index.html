@@ -1,0 +1,92 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+
+        <title>Random Quote Generator</title>
+        <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(img/backgroundimage.jpg);
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            overflow: auto;
+        }    
+        h3 {
+            text-align: center;
+        }    
+        h5 {
+            text-align: center;
+        }
+        #dropdown {
+            width: 200px;
+            margin-bottom: 40px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row equal">
+                <div class="w-100 p-3" style="margin-top: 20px; text-align: center;">
+                    <div class="card text-black">
+                        <img class="card-img" src="img/backgroundimage1.jpg" alt="Background image" height="300px">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Random Quote Generator</h3>
+                            <br>
+                            <h5 class="card-text">Generate quote from three parts: beginning, middle and end.</h5>
+                            <br>
+                            <div id="quoteDisplay">
+
+                            </div>
+                            <br>
+                            <button type="button" id="button1" class="btn btn-primary btn-lg">Generate Quote</button>
+                            <button type="button" id="button2" class="btn btn-primary btn-lg">Exit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 p-3" style="margin-top: 20px; text-align: center;">
+                    <div class="card text-black">
+                        <img class="card-img" src="img/backgroundimage1.jpg" alt="Background image" height="800px">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Random Quote Generator</h3>
+                            <br>
+                            <h5 class="card-text">Generate selected number of random quotes.</h5>
+                            <br>
+                            <select id="dropdown">
+                                <option value="1" selected="selected">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <br>
+                            <h5>Select category of quote:</h5>
+                            <input type="radio" id="sport" name="quote" value="sport">
+                            <label for="sport">Sport</label><br>
+                            <input type="radio" id="business" name="quote" value="business">
+                            <label for="business">Business</label><br>
+                            <br>
+                            <div id="quoteDisplay1">
+
+                            </div>
+                            <br>
+                            <button type="button" id="button3" class="btn btn-primary btn-lg">Generate Quote</button>
+                            <button type="button" id="button4" class="btn btn-primary btn-lg">Exit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="randomquotegenerator1.js"></script>
+        <script src="randomquotegenerator2.js"></script>
+    </body>
